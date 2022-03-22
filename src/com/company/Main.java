@@ -1,16 +1,20 @@
 package com.company;
 
 import java.util.Random;
+import java.util.Scanner;
+
 import static java.lang.Math.sin;
 
 public class Main {
 
+    private static final Scanner scanner=new Scanner(System.in);
+
     public static void main(String[] args) {
         //Formula();
-        //task43();
-        //task68();
-        //task93();
-        //task118();
+        task43();
+        task68();
+        task93();
+        task118();
         task143();
     }
 
@@ -104,8 +108,17 @@ public class Main {
      */
     private static void task118()
     {
+        int n=0,k=0,sum=0;
+        System.out.println("Введите");
+       // int M= Integer.parseInt(scanner.next());
+        int O= Integer.parseInt(scanner.next());
+        System.out.println(" Верхняя граница-->"+O);
+        for(int i=1;i<O;i++)
+        {
+            sum+=i;
 
-
+        }
+        System.out.println(" Сумма всех n-значных чисел от 1 до "+O+" 4равна "+sum);
 
     }
 
@@ -114,9 +127,18 @@ public class Main {
      */
     private static void task143()
     {
+        int count=0;
+        int n= Integer.parseInt(scanner.next());
+        for(int i=11;i<n;i+=11)
+        {
+            System.out.println(i);
+            if(i%11==0)
+            {
+                count++;
+            }
 
-
-
+        }
+        System.out.println("Количество натуральных чисел, меньших n, которые не делятся на 11 "+count);
     }
     /**
      * Task Number=43
