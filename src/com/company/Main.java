@@ -96,7 +96,6 @@ public class Main {
             array[i]=(int)(1+Math.random()*12);
             System.out.print(array[i]+"|");
             sum +=array[i];
-            //array[i]= random.nextInt(bound : 4 );
         }
         System.out.println();
 
