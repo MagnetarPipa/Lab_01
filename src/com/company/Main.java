@@ -23,12 +23,14 @@ public class Main {
      */
     private static void task43()
     {
+        System.out.println("Задание 43");
+
         float y=0,sum=0;
         for(float i=0;i<1;i+=0.1)
         {
             y = (float)(sin(1)+sin(1+i+0.1));
             sum += y;
-           System.out.println("Сумма равна " + sum + " у равно "+ y +" I ravno "+i);
+           System.out.println("Сумма равна " + sum + " у равно "+ y +" I равно "+i);
         }
 
         //10,4319
@@ -45,6 +47,8 @@ public class Main {
      */
     private static void task68()
     {
+        System.out.println("Задание 68");
+
         int number_mounth=0,count_month = 0;
         double percent=0,deposit_sum=0,deposit_account=1000,growth=0;
 
@@ -84,6 +88,8 @@ public class Main {
 
     private static void task93()
     {
+        System.out.println("Задание 93");
+
         int sum=0,average_mark=0;
 
         int array[]=new int[10];
@@ -108,6 +114,8 @@ public class Main {
      */
     private static void task118()
     {
+        System.out.println("Задание 118");
+
         int n=0,k=0,sum=0;
         System.out.println("Введите");
        // int M= Integer.parseInt(scanner.next());
@@ -127,6 +135,8 @@ public class Main {
      */
     private static void task143()
     {
+        System.out.println("Задание 143");
+
         int count=0;
         int n= Integer.parseInt(scanner.next());
         for(int i=11;i<n;i+=11)
