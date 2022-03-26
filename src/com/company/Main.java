@@ -10,7 +10,6 @@ public class Main {
     private static final Scanner scanner=new Scanner(System.in);
 
     public static void main(String[] args) {
-        //Formula();
         task43();
         task68();
         task93();
@@ -30,10 +29,9 @@ public class Main {
         {
             y = (float)(sin(1)+sin(1+i+0.1));
             sum += y;
-           System.out.println("Сумма равна " + sum + " у равно "+ y +" I равно "+i);
+           System.out.println("Сумма равна " + sum);
         }
 
-        //10,4319
     }
 
     /**
@@ -62,16 +60,14 @@ public class Main {
             growth=deposit_account+deposit_sum;
             System.out.println("Прирост суммы вклада в " +mounth + " месяц ="+ growth);
 
-
             if(deposit_sum>30.0)
             {
-               System.out.println("Велична ежимесячнего увеличения увклада превысит 30 в " + number_mounth + " месяц ");
+               System.out.println("Велична ежимесячнего увеличения увклада превысит 30 в " + number_mounth + " месяц");
+
 
             }
 
         }
-
-
 
         while (deposit_account <=1200.0)
         {
@@ -117,16 +113,12 @@ public class Main {
         System.out.println("Задание 118");
 
         int n=0,k=0,sum=0;
-        System.out.println("Введите");
-       // int M= Integer.parseInt(scanner.next());
-        int O= Integer.parseInt(scanner.next());
-        System.out.println(" Верхняя граница-->"+O);
-        for(int i=1;i<O;i++)
+        for(int i=2;i<4;i++)
         {
             sum+=i;
 
         }
-        System.out.println(" Сумма всех n-значных чисел от 1 до "+O+" 4равна "+sum);
+        System.out.println(" Сумма всех n-значных чисел от 1 до 4 равна "+sum);
 
     }
 
@@ -150,25 +142,7 @@ public class Main {
         }
         System.out.println("Количество натуральных чисел, меньших n, которые не делятся на 11 "+count);
     }
-    /**
-     * Task Number=43
-     * Task Number=68
-     * Task Number=93
-     * Task Number=118
-     * Task Number=143
-     */
-
-    private static void Formula()
-    {
-        int N=18,G=1;
-        for(int K=1;K<6;K++)
-        {
-
-           int task_number=(24 + N + (K - 1) *25)+G;
-           System.out.println("Task Number=" + task_number + " K="+K);
-        }
-
-
-    }
 
 }
+
+
