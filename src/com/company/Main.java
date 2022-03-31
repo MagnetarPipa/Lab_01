@@ -11,11 +11,11 @@ public class Main {
 
 
     public static void main(String[] args) {
-        task43();
-        task68();
-        task93();
+       // task43();
+       // task68();
+       // task93();
         task118();
-        task143();
+       // task143();
     }
 
     /**
@@ -101,13 +101,43 @@ public class Main {
      */
     private static void task118() {
         System.out.println("Задание 118");
-       //todo correct solution
-        int n = 0, k = 0, sum = 0;
-        for (int i = 1; i < 4; i++) {
-            sum += i;
+        int   sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
+        System.out.println("Введите количество цифр в числе");
+        int n = Integer.parseInt(scanner.next());
+        for(;n<=4;n++)
+        {
+            if(n==1)
+            {
+                for(int i=1;i<=9;i++)
+                {
+                    sum1+=i;
+                }
+            }
+            if(n==2)
+            {
+                for(int j=10;j<=99;j++)
+                {
+                    sum2+=j;
+                }
+            }
+            if(n==3)
+            {
+                for(int k=100;k<=999;k++)
+                {
+                    sum3+=k;
+                }
+            }
+            if(n==4)
+            {
+                for(int l=1000;l<=9999;l++)
+                {
+                    sum4+=l;
+                }
+            }
 
         }
-        System.out.println(" Сумма всех n-значных чисел от 1 до 4 равна " + sum);
+
+        System.out.println("Сумма однозначных чисел="+sum1+"Сумма двузначных чисел="+sum2+"Сумма трехзначных чисел="+sum3+"Сумма четырехзначных чисел="+sum4);
 
     }
 
