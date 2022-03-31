@@ -11,11 +11,11 @@ public class Main {
 
 
     public static void main(String[] args) {
-       // task43();
-       // task68();
-       // task93();
+        task43();
+        task68();
+        task93();
         task118();
-       // task143();
+        task143();
     }
 
     /**
