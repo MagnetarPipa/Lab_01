@@ -101,44 +101,15 @@ public class Main {
      */
     private static void task118() {
         System.out.println("Задание 118");
-        int   sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
-        System.out.println("Введите количество цифр в числе");
-        int n = Integer.parseInt(scanner.next());
-        for(;n<=4;n++)
-        {
-            if(n==1)
-            {
-                for(int i=1;i<=9;i++)
-                {
-                    sum1+=i;
-                }
-            }
-            if(n==2)
-            {
-                for(int j=10;j<=99;j++)
-                {
-                    sum2+=j;
-                }
-            }
-            if(n==3)
-            {
-                for(int k=100;k<=999;k++)
-                {
-                    sum3+=k;
-                }
-            }
-            if(n==4)
-            {
-                for(int l=1000;l<=9999;l++)
-                {
-                    sum4+=l;
-                }
-            }
+        int sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
 
+        for (int n = 1; n <= 4; n++) {
+            for (int i = (int) Math.pow(10, n - 1); i <= Math.pow(10, n); i++) {
+                sum1 += i;
+            }
+            System.out.println("Сумма " + n + "-значных чисел=" + sum1);
+            sum1 = 0;
         }
-
-        System.out.println("Сумма однозначных чисел="+sum1+"Сумма двузначных чисел="+sum2+"Сумма трехзначных чисел="+sum3+"Сумма четырехзначных чисел="+sum4);
-
     }
 
     /**
@@ -149,7 +120,7 @@ public class Main {
 
         int count = 0;
         int n = Integer.parseInt(scanner.next());
-        for (int i = 1; i <= n;i++) {
+        for (int i = 1; i <= n; i++) {
             System.out.println(i);
             if (i % 11 != 0) {
                 count++;
